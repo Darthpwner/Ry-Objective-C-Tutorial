@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B08FFC51C1DF5F300C66383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFC41C1DF5F300C66383 /* main.m */; };
+		6B08FFCD1C1E093600C66383 /* CarUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFCC1C1E093600C66383 /* CarUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		6B08FFC11C1DF5F300C66383 /* Ry Objective-C Tutorial */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Ry Objective-C Tutorial"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B08FFC41C1DF5F300C66383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B08FFCB1C1E091200C66383 /* CarUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CarUtilities.h; path = ../CarUtilities.h; sourceTree = "<group>"; };
+		6B08FFCC1C1E093600C66383 /* CarUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarUtilities.m; path = ../CarUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		6B08FFC31C1DF5F300C66383 /* Ry Objective-C Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				6B08FFCB1C1E091200C66383 /* CarUtilities.h */,
 				6B08FFC41C1DF5F300C66383 /* main.m */,
+				6B08FFCC1C1E093600C66383 /* CarUtilities.m */,
 			);
 			path = "Ry Objective-C Tutorial";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B08FFC51C1DF5F300C66383 /* main.m in Sources */,
+				6B08FFCD1C1E093600C66383 /* CarUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

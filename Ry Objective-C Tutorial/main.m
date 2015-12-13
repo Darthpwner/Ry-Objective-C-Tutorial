@@ -1,5 +1,6 @@
 // main.m
 #import <Foundation/Foundation.h>
+#import "CarUtilities.h"
 //
 //int getRandomInteger(int minimum, int maximum) {
 //    return arc4random_uniform((maximum - minimum) + 1) + minimum;
@@ -99,6 +100,18 @@ int main(int argc, const char * argv[]) {
     NSLog(@"%d", countByTwo());    // 2
     NSLog(@"%d", countByTwo());    // 4
     NSLog(@"%d", countByTwo());    // 6
+    NSLog(@"\n\n");
+    //
+    
+    //Import from a separate class
+    NSDictionary *makesAndModels = @{
+                                     @"Ford": @[@"Explorer", @"F-150"],
+                                     @"Honda": @[@"Accord", @"Civic", @"Pilot"],
+                                     @"Nissan": @[@"370Z", @"Altima", @"Versa"],
+                                     @"Porsche": @[@"911 Turbo", @"Boxster", @"Cayman S"]
+                                     };
+    NSString *randomCar = CUGetRandomMakeAndModel(makesAndModels);
+    NSLog(@"Selected a %@", randomCar);
     NSLog(@"\n\n");
     //
     
