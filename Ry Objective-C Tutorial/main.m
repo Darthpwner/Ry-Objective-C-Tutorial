@@ -1,11 +1,24 @@
 // main.m
 #import <Foundation/Foundation.h>
+//
+//int getRandomInteger(int minimum, int maximum) {
+//    return arc4random_uniform((maximum - minimum) + 1) + minimum;
+//}
 
-int getRandomInteger(int minimum, int maximum) {
+static int getRandomInteger(int, int);
+
+// Static function implementation
+static int getRandomInteger(int minimum, int maximum) {
     return arc4random_uniform((maximum - minimum) + 1) + minimum;
 }
 
 NSString *getRandomMake(NSArray *);
+
+int countByTwo() {
+    static int currentCount = 0;
+    currentCount += 2;
+    return currentCount;
+}
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -79,6 +92,13 @@ int main(int argc, const char * argv[]) {
     //Function pointer example
     NSArray *makes = @[@"Honda", @"Ford", @"Nissan", @"Porsche"];
     NSLog(@"Selected a %@", getRandomMake(makes));
+    NSLog(@"\n\n");
+    //
+    
+    //Static local variable example
+    NSLog(@"%d", countByTwo());    // 2
+    NSLog(@"%d", countByTwo());    // 4
+    NSLog(@"%d", countByTwo());    // 6
     NSLog(@"\n\n");
     //
     
