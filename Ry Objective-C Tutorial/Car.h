@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+//Cannot place properties above interface
+
 @interface Car : NSObject {
     //Protected instance variables (not recommended)
 }
 
 @property (copy) NSString *model;
 
++ (void)setDefaultModel:(NSString *)aModel;
 - (void) drive;
+
 
 @end

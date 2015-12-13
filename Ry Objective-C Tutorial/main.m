@@ -1,6 +1,8 @@
 // main.m
 #import <Foundation/Foundation.h>
 #import "CarUtilities.h"
+#import "Car.h"
+
 //
 //int getRandomInteger(int minimum, int maximum) {
 //    return arc4random_uniform((maximum - minimum) + 1) + minimum;
@@ -115,6 +117,19 @@ int main(int argc, const char * argv[]) {
     NSLog(@"\n\n");
     //
     
+    //Instantiation and usage
+    Car *toyota = [[Car alloc] init];
+    
+    [toyota setModel:@"Toyota Corolla"];
+    NSLog(@"Created a %@", [toyota model]);
+    
+    toyota.model = @"Toyota Camry";
+    NSLog(@"Changed the car to a %@", toyota.model);
+    
+    [toyota drive];
+    NSLog(@"\n\n");
+    //
+
     return 0;
 }
 

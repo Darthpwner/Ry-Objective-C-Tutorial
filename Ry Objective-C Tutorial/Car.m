@@ -8,6 +8,9 @@
 
 #import "Car.h"
 
+//Definition of class method
+static NSString *_defaultModel;
+
 @implementation Car {
     //Private instance variables
     double _odometer;
@@ -17,6 +20,11 @@
 
 - (void)drive {
     NSLog(@"Driving a %@. Vroooom!", self.model);
+}
+
+//Implementation of class method
++ (void)setDefaultModel:(NSString *)aModel {
+    _defaultModel = [aModel copy];
 }
 
 @end
