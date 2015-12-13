@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B08FFC51C1DF5F300C66383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFC41C1DF5F300C66383 /* main.m */; };
 		6B08FFCD1C1E093600C66383 /* CarUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFCC1C1E093600C66383 /* CarUtilities.m */; };
+		6B08FFD01C1E1A0F00C66383 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFCF1C1E1A0F00C66383 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		6B08FFC41C1DF5F300C66383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6B08FFCB1C1E091200C66383 /* CarUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CarUtilities.h; path = ../CarUtilities.h; sourceTree = "<group>"; };
 		6B08FFCC1C1E093600C66383 /* CarUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarUtilities.m; path = ../CarUtilities.m; sourceTree = "<group>"; };
+		6B08FFCE1C1E1A0F00C66383 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		6B08FFCF1C1E1A0F00C66383 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				6B08FFCB1C1E091200C66383 /* CarUtilities.h */,
-				6B08FFC41C1DF5F300C66383 /* main.m */,
 				6B08FFCC1C1E093600C66383 /* CarUtilities.m */,
+				6B08FFC41C1DF5F300C66383 /* main.m */,
+				6B08FFCE1C1E1A0F00C66383 /* Car.h */,
+				6B08FFCF1C1E1A0F00C66383 /* Car.m */,
 			);
 			path = "Ry Objective-C Tutorial";
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B08FFD01C1E1A0F00C66383 /* Car.m in Sources */,
 				6B08FFC51C1DF5F300C66383 /* main.m in Sources */,
 				6B08FFCD1C1E093600C66383 /* CarUtilities.m in Sources */,
 			);
