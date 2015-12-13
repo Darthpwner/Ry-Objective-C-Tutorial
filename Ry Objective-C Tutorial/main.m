@@ -5,11 +5,7 @@ int getRandomInteger(int minimum, int maximum) {
     return arc4random_uniform((maximum - minimum) + 1) + minimum;
 }
 
-NSString *getRandomMake(NSArray *makes) {
-    int maximum = (int)[makes count];   //equivalent to sizeof(makes)
-    int randomIndex = arc4random_uniform(maximum);
-    return makes[randomIndex];  //Returns value at randomIndex in array makes
-}
+NSString *getRandomMake(NSArray *);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -87,4 +83,10 @@ int main(int argc, const char * argv[]) {
     //
     
     return 0;
+}
+
+NSString *getRandomMake(NSArray *makes) {
+    int maximum = (int)[makes count];   //equivalent to sizeof(makes)
+    int randomIndex = arc4random_uniform(maximum);
+    return makes[randomIndex];  //Returns value at randomIndex in array makes
 }
