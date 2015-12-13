@@ -22,9 +22,31 @@ static NSString *_defaultModel;
     NSLog(@"Driving a %@. Vroooom!", self.model);
 }
 
+- (id)initWithModel:(NSString *)aModel {
+    self = [super init];
+    if (self) {
+        // Any custom setup work goes here
+        _model = [aModel copy];
+        _odometer = 0;
+    }
+    return self;
+}
+
+- (id)init {
+    // Forward to the "designated" initialization method
+    return [self initWithModel:_defaultModel];
+}
+
 //Implementation of class method
 + (void)setDefaultModel:(NSString *)aModel {
     _defaultModel = [aModel copy];  //Creates a copy of the parameter instead of assigning it directly.
+}
+
++ (void)initialize {
+    if (self == [Car class]) {
+        // Makes sure this isn't executed more than once
+        _defaultModel = @"Nissan Versa";
+    }
 }
 
 @end

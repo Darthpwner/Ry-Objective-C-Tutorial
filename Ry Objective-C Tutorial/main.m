@@ -133,7 +133,15 @@ int main(int argc, const char * argv[]) {
     //Class Instantiation and usage
     [Car setDefaultModel:@"Nissan Versa"];
     //
-
+    
+    // Instantiating objects
+    Car *nissan = [[Car alloc] init];
+    NSLog(@"Created a %@", [nissan model]);
+    
+    Car *chevy = [[Car alloc] initWithModel:@"Chevy Corvette"];
+    NSLog(@"Created a %@, too.", chevy.model);
+    //
+    
     return 0;
 }
 

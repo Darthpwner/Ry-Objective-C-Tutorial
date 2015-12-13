@@ -14,10 +14,13 @@
     //Protected instance variables (not recommended)
 }
 
+
 @property (copy) NSString *model;
 
-+ (void)setDefaultModel:(NSString *)aModel;
+// Car.h
+- (id)initWithModel:(NSString *)aModel;
 - (void) drive;
 
++ (void)setDefaultModel:(NSString *)aModel;
 
 @end
