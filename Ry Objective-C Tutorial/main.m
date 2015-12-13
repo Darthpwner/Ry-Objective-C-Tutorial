@@ -117,7 +117,7 @@ int main(int argc, const char * argv[]) {
     NSLog(@"\n\n");
     //
     
-    //Instantiation and usage
+    //Instance Instantiation and usage
     Car *toyota = [[Car alloc] init];
     
     [toyota setModel:@"Toyota Corolla"];
@@ -128,6 +128,10 @@ int main(int argc, const char * argv[]) {
     
     [toyota drive];
     NSLog(@"\n\n");
+    //
+    
+    //Class Instantiation and usage
+    [Car setDefaultModel:@"Nissan Versa"];
     //
 
     return 0;

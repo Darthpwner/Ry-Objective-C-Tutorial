@@ -24,7 +24,7 @@ static NSString *_defaultModel;
 
 //Implementation of class method
 + (void)setDefaultModel:(NSString *)aModel {
-    _defaultModel = [aModel copy];
+    _defaultModel = [aModel copy];  //Creates a copy of the parameter instead of assigning it directly.
 }
 
 @end
