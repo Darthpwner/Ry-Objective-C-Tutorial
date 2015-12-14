@@ -16,8 +16,9 @@
 }
 
 
-@property (copy) NSString *model;
+//@property (copy) NSString *model;
 @property (nonatomic, strong) Person *driver;
+@property (nonatomic, copy) NSString *model;
 
 // Car.h
 

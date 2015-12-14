@@ -177,8 +177,28 @@ int main(int argc, const char * argv[]) {
     NSLog(@"\n\n");
     //
 
+    //Strong Attribute example
+    Person *john = [[Person alloc] init];
+    john.name = @"John";
+    
+    Car *honda = [[Car alloc] init];
+    honda.model = @"Honda Civic";
+    honda.driver = john;
+    john.car = honda;   //Notice the circular link
+    
+    NSLog(@"%@ is driving the %@", honda.driver, honda.model);
+    NSLog(@"\n\n");
     //
     
+    //Copy attribute example
+    Car *hyundai = [[Car alloc] init];
+    NSMutableString *model = [NSMutableString stringWithString:@"Honda Civic"];
+    honda.model = model;
+    
+    NSLog(@"%@", hyundai.model);
+    [model setString:@"Nissa Versa"];
+    NSLog(@"%@", hyundai.model);            // Still "Honda Civic"
+     NSLog(@"\n\n");
     //
     
     return 0;
