@@ -3,6 +3,8 @@
 #import "CarUtilities.h"
 #import "Car.h"
 #import "Bicycle.h"
+#import "Car+Maintenance.h"
+
 //
 //int getRandomInteger(int minimum, int maximum) {
 //    return arc4random_uniform((maximum - minimum) + 1) + minimum;
@@ -208,6 +210,26 @@ int main(int argc, const char * argv[]) {
     [bike signalStop];
     [bike lockToStructure:nil];
     NSLog(@"\n\n");
+    //
+    
+    //Category example
+    Car *porsche = [[Car alloc] init];
+    porsche.model = @"Porsche 911 Turbo";
+    Car *ford = [[Car alloc] init];
+    ford.model = @"Ford F-150";
+    
+    // "Standard" functionality from Car.h
+  //  [porsche startEngine];    //Buggy for some reason
+    [porsche drive];
+    [porsche turnLeft];
+    [porsche turnRight];
+    
+    // Additional methods from Car+Maintenance.h
+    if ([porsche needsOilChange]) {
+        [porsche changeOil];
+    }
+    [porsche rotateTires];
+    [porsche jumpBatteryUsingCar:ford];
     //
     
     return 0;
