@@ -13,6 +13,7 @@
 		6B08FFD31C1E56A600C66383 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFD21C1E56A600C66383 /* Person.m */; };
 		6B08FFDF1C1E6C9F00C66383 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFDE1C1E6C9F00C66383 /* Bicycle.m */; };
 		6B08FFE31C1E80D600C66383 /* Car+Maintenance.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFE21C1E80D600C66383 /* Car+Maintenance.m */; };
+		6B08FFE61C1E864D00C66383 /* Car+Protected.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFE51C1E864D00C66383 /* Car+Protected.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,8 @@
 		6B08FFE01C1E6CAE00C66383 /* Bicycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
 		6B08FFE11C1E80D600C66383 /* Car+Maintenance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+Maintenance.h"; sourceTree = "<group>"; };
 		6B08FFE21C1E80D600C66383 /* Car+Maintenance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Maintenance.m"; sourceTree = "<group>"; };
+		6B08FFE41C1E864D00C66383 /* Car+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+Protected.h"; sourceTree = "<group>"; };
+		6B08FFE51C1E864D00C66383 /* Car+Protected.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Protected.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				6B08FFCB1C1E091200C66383 /* CarUtilities.h */,
 				6B08FFCC1C1E093600C66383 /* CarUtilities.m */,
 				6B08FFC41C1DF5F300C66383 /* main.m */,
+				6B08FFE41C1E864D00C66383 /* Car+Protected.h */,
+				6B08FFE51C1E864D00C66383 /* Car+Protected.m */,
 				6B08FFD11C1E56A600C66383 /* Person.h */,
 				6B08FFD21C1E56A600C66383 /* Person.m */,
 				6B08FFCE1C1E1A0F00C66383 /* Car.h */,
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B08FFE61C1E864D00C66383 /* Car+Protected.m in Sources */,
 				6B08FFE31C1E80D600C66383 /* Car+Maintenance.m in Sources */,
 				6B08FFD01C1E1A0F00C66383 /* Car.m in Sources */,
 				6B08FFC51C1DF5F300C66383 /* main.m in Sources */,
