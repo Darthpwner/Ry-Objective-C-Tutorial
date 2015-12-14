@@ -22,6 +22,14 @@ static NSString *_defaultModel;
     NSLog(@"Driving a %@. Vroooom!", self.model);
 }
 
+- (void)turnLeft {
+    NSLog(@"The %@ is turning left", _model);
+}
+
+- (void)turnRight {
+    NSLog(@"The %@ is turning right", _model);
+}
+
 - (id)initWithModel:(NSString *)aModel {
     self = [super init];
     if (self) {

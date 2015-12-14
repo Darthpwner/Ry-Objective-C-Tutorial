@@ -20,6 +20,11 @@
 @property (nonatomic, strong) Person *driver;
 @property (nonatomic, copy) NSString *model;
 
+@property (readonly) double odometer;
+
+- (void)turnLeft;
+- (void)turnRight;
+
 // Car.h
 
 - (void) drive;
