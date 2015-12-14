@@ -7,6 +7,7 @@
 //
 
 #import "Car.h"
+#import "Car+Protected.h"
 
 //Definition of class method
 static NSString *_defaultModel;
@@ -19,7 +20,8 @@ static NSString *_defaultModel;
 @synthesize model = _model; //Optional for Xcode 4.4+
 
 - (void)drive {
-    NSLog(@"Driving a %@. Vroooom!", self.model);
+    [self prepareToDrive];
+    NSLog(@"The %@ is now driving", _model);
 }
 
 - (void)turnLeft {

@@ -4,6 +4,7 @@
 #import "Car.h"
 #import "Bicycle.h"
 #import "Car+Maintenance.h"
+#import "Coupe.h"
 
 //
 //int getRandomInteger(int minimum, int maximum) {
@@ -230,6 +231,30 @@ int main(int argc, const char * argv[]) {
     }
     [porsche rotateTires];
     [porsche jumpBatteryUsingCar:ford];
+    NSLog(@"\n\n");
+    //
+    
+    //Protected class example
+    Car *ford1 = [[Car alloc] init];
+    ford1.model = @"Ford F-150";
+   // [ford1 startEngine];
+    [ford1 drive]; // Calls the protected method
+    
+    Car *porsche1 = [[Coupe alloc] init];
+    porsche1.model = @"Porsche 911 Turbo";
+   // [porsche1 startEngine]; // Calls the protected method
+    [porsche1 drive];
+    
+    // "Protected" methods have not been imported,
+    // so this will *not* work
+    // [porsche prepareToDrive];
+    
+    SEL protectedMethod = @selector(prepareToDrive);
+    if ([porsche respondsToSelector:protectedMethod]) {
+        // This *will* work
+        [porsche performSelector:protectedMethod];
+    }
+    NSLog(@"\n\n");
     //
     
     return 0;
