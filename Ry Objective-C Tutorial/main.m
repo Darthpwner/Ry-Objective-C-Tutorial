@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import "CarUtilities.h"
 #import "Car.h"
-
+#import "Bicycle.h"
 //
 //int getRandomInteger(int minimum, int maximum) {
 //    return arc4random_uniform((maximum - minimum) + 1) + minimum;
@@ -199,6 +199,15 @@ int main(int argc, const char * argv[]) {
     [model setString:@"Nissa Versa"];
     NSLog(@"%@", hyundai.model);            // Still "Honda Civic"
      NSLog(@"\n\n");
+    //
+    
+    //Protocol example
+    Bicycle *bike = [[Bicycle alloc] init];
+    [bike startPedaling];
+    [bike signalLeftTurn];
+    [bike signalStop];
+    [bike lockToStructure:nil];
+    NSLog(@"\n\n");
     //
     
     return 0;

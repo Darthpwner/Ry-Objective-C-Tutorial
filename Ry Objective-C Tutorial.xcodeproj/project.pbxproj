@@ -11,6 +11,7 @@
 		6B08FFCD1C1E093600C66383 /* CarUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFCC1C1E093600C66383 /* CarUtilities.m */; };
 		6B08FFD01C1E1A0F00C66383 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFCF1C1E1A0F00C66383 /* Car.m */; };
 		6B08FFD31C1E56A600C66383 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFD21C1E56A600C66383 /* Person.m */; };
+		6B08FFDF1C1E6C9F00C66383 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B08FFDE1C1E6C9F00C66383 /* Bicycle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,9 @@
 		6B08FFCF1C1E1A0F00C66383 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		6B08FFD11C1E56A600C66383 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		6B08FFD21C1E56A600C66383 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6B08FFD41C1E6B8800C66383 /* StreetLegal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreetLegal.h; sourceTree = "<group>"; };
+		6B08FFDE1C1E6C9F00C66383 /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
+		6B08FFE01C1E6CAE00C66383 /* Bicycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 		6B08FFB81C1DF5F300C66383 = {
 			isa = PBXGroup;
 			children = (
+				6B08FFD41C1E6B8800C66383 /* StreetLegal.h */,
 				6B08FFC31C1DF5F300C66383 /* Ry Objective-C Tutorial */,
 				6B08FFC21C1DF5F300C66383 /* Products */,
 			);
@@ -66,6 +71,8 @@
 		6B08FFC31C1DF5F300C66383 /* Ry Objective-C Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				6B08FFE01C1E6CAE00C66383 /* Bicycle.h */,
+				6B08FFDE1C1E6C9F00C66383 /* Bicycle.m */,
 				6B08FFCB1C1E091200C66383 /* CarUtilities.h */,
 				6B08FFCC1C1E093600C66383 /* CarUtilities.m */,
 				6B08FFC41C1DF5F300C66383 /* main.m */,
@@ -136,6 +143,7 @@
 				6B08FFD01C1E1A0F00C66383 /* Car.m in Sources */,
 				6B08FFC51C1DF5F300C66383 /* main.m in Sources */,
 				6B08FFD31C1E56A600C66383 /* Person.m in Sources */,
+				6B08FFDF1C1E6C9F00C66383 /* Bicycle.m in Sources */,
 				6B08FFCD1C1E093600C66383 /* CarUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
